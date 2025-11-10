@@ -1,0 +1,36 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.log
+*.db
+
+# ---- Environment ----
+.env
+venv/
+env/
+llm_env/
+*/venv/
+*/env/
+
+# ---- IDEs ----
+.vscode/
+.idea/
+.DS_Store
+
+# ---- Streamlit Cache ----
+.streamlit/
+cache/
+__pycache__/
+
+# ---- Build ----
+*.egg-info/
+dist/
+build/
+
+# ---- Temporary ----
+temp_files/
+vectorstore_data/
+*.zip

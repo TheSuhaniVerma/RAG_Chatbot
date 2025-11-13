@@ -167,6 +167,3 @@ This project is licensed under the **MIT License**.
 Consider giving the repo a **star** ⭐ on GitHub!
 
 
-gitHub.com/TheSuhaniVerma/RAG_Chatbot
-```
-

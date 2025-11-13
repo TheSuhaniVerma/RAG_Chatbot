@@ -1,0 +1,65 @@
+# Ignore Python cache
+_pycache_/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Git
+.git/
+.gitignore
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# Ignore logs
+*.log
+
+# Ignore temporary folders
+temp_files/
+tmp/
+temp/
+
+# Ignore vectorstore data (generated at runtime)
+vectorstore_data/
+faiss_index/
+chroma/
+db/
+indexes/
+
+# Ignore uploaded documents
+uploads/
+upload/
+upload_files/
+
+# Ignore Streamlit cache
+.streamlit/
+
+# Ignore any local SQLite or cache data
+*.db
+*.sqlite
+
+# Ignore model weights (if any)
+*.bin
+*.pt
+*.pth
+
+# Ignore compiled files
+*.so
+*.o
+*.a
+
+# Ignore Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Python packaging cache
+pip-wheel-metadata/

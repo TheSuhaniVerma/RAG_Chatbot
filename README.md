@@ -1,5 +1,4 @@
 
-md
 <p align="center">
   <img src="assets/logo.png" alt="DocuMind Logo" width="170">
 </p>

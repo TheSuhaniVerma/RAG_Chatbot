@@ -4,7 +4,7 @@ md
   <img src="assets/logo.png" alt="DocuMind Logo" width="170">
 </p>
 
-<h1 align="center">🧠 DocuMind – RAG-Based Local Document Assistant</h1>
+<h1 align="center">DocuMind – RAG-Based Local Document Assistant</h1>
 
 <p align="center">
 A lightweight, private, local Retrieval-Augmented Generation chatbot that answers questions from your PDF and TXT documents — powered by FAISS, LangChain, and Ollama.
@@ -12,19 +12,19 @@ A lightweight, private, local Retrieval-Augmented Generation chatbot that answer
 
 ---
 
-## 🚀 Features
+## Features
 
-- 📄 Upload PDFs or TXT files  
-- 🔍 Intelligent retrieval using **FAISS**  
-- 🧠 Embedding powered by **Ollama (nomic-embed-text)** – No PyTorch required  
-- 🤖 LLM responses with **Ollama llama3.2**  
-- ⚡ Local, fast, and private  
-- 🖥 Clean **Streamlit UI**  
-- 🐳 Fully containerized using **Docker**  
+- Upload PDFs or TXT files  
+- Intelligent retrieval using **FAISS**  
+- Embedding powered by **Ollama (nomic-embed-text)** – No PyTorch required  
+- LLM responses with **Ollama llama3.2**  
+- Local, fast, and private  
+- Clean **Streamlit UI**  
+- Fully containerized using **Docker**  
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 
 
@@ -45,7 +45,7 @@ RAG_Chatbot/
 
 ---
 
-## 🛠 Prerequisites
+##  Prerequisites
 
 You must install:
 
@@ -61,17 +61,17 @@ ollama pull llama3.2
 
 ---
 
-## 🐳 Running DocuMind With a Single Command
+##  Running DocuMind With a Single Command
 
 From inside the project folder:
 
-### 🔨 Build
+###  Build
 
 bash
 docker build -t documind .
 
 
-### ▶ Run the app
+###  Run the app
 
 bash
 docker run -p 8501:8501 documind
@@ -85,7 +85,7 @@ http://localhost:8501
 
 ---
 
-## 📁 How It Works
+##  How It Works
 
 ### 1️⃣ Document Upload
 
@@ -125,7 +125,7 @@ You get a grounded, non-hallucinated answer.
 
 ---
 
-## 🧪 Example Prompt
+##  Example Prompt
 
 Ask something like:
 
@@ -137,7 +137,7 @@ DocuMind will fetch relevant chunks and generate an answer.
 
 ---
 
-## 🔧 Technologies Used
+##  Technologies Used
 
 * **LangChain** – Retrieval + processing
 * **FAISS** – Fast vector search
@@ -147,9 +147,9 @@ DocuMind will fetch relevant chunks and generate an answer.
 
 ---
 
-## 🤝 Contributors
+##  Contributors
 
-### 🛠 Developers
+###  Developers
 
 * **Suhani Verma** – RAG pipeline, embeddings, retrieval, LLM generation
 * **Arya Jha** – Interface design & Docker workflow
@@ -157,13 +157,13 @@ DocuMind will fetch relevant chunks and generate an answer.
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the **MIT License**.
 
 ---
 
-## ⭐ If you like this project…
+##  If you like this project…
 
 Consider giving the repo a **star** ⭐ on GitHub!
 

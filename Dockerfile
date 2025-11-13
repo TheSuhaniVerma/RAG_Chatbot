@@ -1,17 +1,18 @@
-# Use official Python image
-FROM python:3.10-slim
+FROM python:3.11-slim
 
-# Set working directory
 WORKDIR /app
 
-# Copy all files from your folder into the container
-COPY . /app
+# Install system dependencies
+RUN apt-get update && apt-get install -y git && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt || true
+# Install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose port (for web apps)
+# Copy project files
+COPY . .
+
 EXPOSE 8501
 
-# Default command to run the main file
-CMD ["python", "main.py"]
+CMD ["streamlit", "run", "app.py"]

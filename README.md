@@ -27,14 +27,14 @@ A lightweight, private, local Retrieval-Augmented Generation chatbot that answer
 
 
 
-RAG_Chatbot/
+RAG_Chatbot/ <br>
 ├── app.py                     
-├── module/
+├── module/ <br>
 │   ├── document_processor.py  
 │   ├── retriever.py           
 │   ├── generator.py           
 │   ├── utilities.py           
-├── assets/
+├── assets/ <br>
 │   └── logo.png              
 ├── Dockerfile                
 ├── requirements.txt           

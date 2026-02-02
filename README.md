@@ -28,19 +28,18 @@ A lightweight, private, local Retrieval-Augmented Generation chatbot that answer
 
 
 RAG_Chatbot/
-├── app.py                     # Main Streamlit UI
+├── app.py                     
 ├── module/
-│   ├── document_processor.py  # Document loading, splitting, embeddings
-│   ├── retriever.py           # Semantic retrieval + re-ranking
-│   ├── generator.py           # Answer generation with Ollama
-│   ├── utilities.py           # Helper utilities
+│   ├── document_processor.py  
+│   ├── retriever.py           
+│   ├── generator.py           
+│   ├── utilities.py           
 ├── assets/
-│   └── logo.png               # Your DocuMind logo
-├── Dockerfile                 # Docker configuration
-├── requirements.txt           # Lightweight dependency list
-└── README.md                  # Project documentation
+│   └── logo.png              
+├── Dockerfile                
+├── requirements.txt           
+└── README.md                  
 
-`
 
 ---
 
@@ -56,7 +55,7 @@ After installing Ollama, pull the required models:
 bash
 ollama pull nomic-embed-text
 ollama pull llama3.2
-`
+
 
 ---
 
@@ -86,11 +85,11 @@ http://localhost:8501
 
 ##  How It Works
 
-### 1️⃣ Document Upload
+### 1️. Document Upload
 
 The user uploads one or multiple **PDF/TXT** files.
 
-### 2️⃣ Preprocessing
+### 2️. Preprocessing
 
 Documents are:
 
@@ -98,25 +97,25 @@ Documents are:
 * Cleaned & validated
 * Split into chunks with RecursiveCharacterTextSplitter
 
-### 3️⃣ Embedding (Ollama)
+### 3️. Embedding (Ollama)
 
 Text chunks → **OllamaEmbeddings ("nomic-embed-text")**
 ✔ No PyTorch
 ✔ No Transformers
 ✔ Low memory + fast
 
-### 4️⃣ Indexing
+### 4️. Indexing
 
 Chunks stored inside **FAISS** (local semantic vector search).
 
-### 5️⃣ Retrieval
+### 5️. Retrieval
 
 Best chunks are selected using:
 
 * base_retriever (FAISS)
 * contextual re-ranking (LLMChainExtractor + llama3.2)
 
-### 6️⃣ Answer Generation
+### 6️. Answer Generation
 
 The final context is fed into **llama3.2**:
 

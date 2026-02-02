@@ -52,10 +52,10 @@ You must install:
 
 After installing Ollama, pull the required models:
 
-bash
+```bash
 ollama pull nomic-embed-text
 ollama pull llama3.2
-
+```
 
 ---
 
@@ -65,15 +65,14 @@ From inside the project folder:
 
 ###  Build
 
-bash
+```bash
 docker build -t documind .
-
+```
 
 ###  Run the app
-
-bash
+```bash
 docker run -p 8501:8501 documind
-
+```
 
 Open your browser at:
 
@@ -100,9 +99,6 @@ Documents are:
 ### 3️. Embedding (Ollama)
 
 Text chunks → **OllamaEmbeddings ("nomic-embed-text")**
-✔ No PyTorch
-✔ No Transformers
-✔ Low memory + fast
 
 ### 4️. Indexing
 
